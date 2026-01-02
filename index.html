@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Portofolio Gwejh yang Pertama</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" 
+        rel="stylesheet" 
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navMain">
+      <a href="#home"
+        ><img src="img/munji's_logo.webp" alt="logo" class="logo"
+      /></a>
+
+      <div class="hamburger" id="hamburgerBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="navUl" id="navMenu">
+        <li><a class="navLi" href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a class="navLi" href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a></li>
+        <li><a class="navLi" href="#project"><i class="fa-solid fa-briefcase"></i>Projects</a></li>
+        <li><a class="navLi" href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HOME/ABOUT -->
+    <section class="home" id="home">
+      <div class="homeMain">
+        <div class="hello">
+          <h1>Hi,</h1>
+          <h1>I'm munji</h1>
+        </div>
+
+        <div class="about">
+          <p>CS Freshman | Web & Game Dev Enthusiast.</p>
+          <a href="https://www.instagram.com/gipradhita"
+            ><button class="aboutBtn">More About Me</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section class="skillsMain" id="skills">
+      <h2 class="sectionTitle">AREAS OF FOCUS</h2>
+      <div class="skillsRow">
+        <h3 class="skills">Web Dev</h3>
+        <div class="tags">
+          <span class="tag" style="background-image: url(img/html5Logo.webp)"
+            >HTML5</span
+          >
+          <span class="tag" style="background-image: url(img/css3Logo.png)"
+            >CSS3</span
+          >
+          <span class="tag" style="background-image: url(img/jsLogo.webp)"
+            >JavaScript</span
+          >
+        </div>
+      </div>
+
+      <div class="skillsRow">
+        <h3 class="skills">Game Dev</h3>
+        <div class="tags">
+          <span class="tag" style="background-image: url(img/unity-logo.png)"
+            >Unity Engine</span
+          >
+          <span class="tag" style="background-image: url(img/blenderLogo.webp)"
+            >Blender 3D</span
+          >
+          <span class="tag" style="background-image: url(img/cLogo.webp)"
+            >C# Scripting</span
+          >
+        </div>
+      </div>
+
+      <div class="skillsRow">
+        <h3 class="skills">Fundamentals</h3>
+        <div class="tags">
+          <span class="tag2">Data Structures</span>
+          <span class="tag2">Algorithms</span>
+          <span class="tag2">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+    <!-- SKILL END -->
+
+    <!-- PROJECT -->
+    <section class="projectMain" id="project">
+      <h2 class="sectionTitle">MY PROJECT</h2>
+      <div class="project">
+        <div class="card">
+          <div class="cardImg">
+            <a href="#home" class="viewBtn">View</a>
+          </div>
+          <div class="cardInfo">
+            <h3>Portofolio</h3>
+            <p>
+              My first personal portofolio website, built entirely from scratch.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardImg2"></div>
+          <div class="cardInfo">
+            <h3>Currently Building...</h3>
+            <p>Something new is brewing.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cardImg3"></div>
+          <div class="cardInfo">
+            <h3>Loading Next Project...</h3>
+            <p>Error page 404</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECT END -->
+
+    <!-- CONTACT ME -->
+    <section class="contactMain" id="contact">
+      <h2 class="sectionTitle">CONTACT ME</h2>
+
+      <div class="contact">
+        <div class="subContainer1">
+          <h2 class="contactTitle">SEND ME A MESSAGE</h2>
+
+          <form target="_blank" action="https://formsubmit.co/acad573ab0e629776acf84786da96b6e" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html#home">
+
+            <input
+              type="text"
+              name="Username"
+              id="userName"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+            <input
+              type="text"
+              name="Subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              name="Message"
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" id="submitBtn">submit</button>
+          </div>
+        </form>
+
+        <div class="subContainer2">
+          <h2 class="contactTitle">CONTACT INFO</h2>
+
+          <h2 class="contactSub">Where to Find Me</h2>
+          <p class="description">
+            Kec.
+            Jepon Kab. Blora, Jawa Tengah 58261
+          </p>
+
+          <h2 class="contactSub">Email Me At</h2>
+          <ul class="contactInfo">
+            <li>moenzzie@gmail.com</li>
+            <li>gilangpradhita@gmail.com</li>
+            <li>gildanputra@gmail.com</li>
+          </ul>
+
+          <h2 class="contactSub">Call Me At</h2>
+          <ul class="contactInfo">
+            <li>Phone: (+62 896 4746 4955)</li>
+            <li>Phone: (+62 821-1398-0436)</li>
+          </ul>
+
+          <ul class="ulMedsos">
+            <li class="liMedsos">
+              <a href="https://wa.me/6289647464955" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </li>
+            <li class="liMedsos">
+              <a
+                href="https://discord.com/users/941897580835651626"
+                target="_blank"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </li>
+            <li class="liMedsos">
+              <a href="https://github.com/munji7" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Diapain dulu itu apanya biar ga apa kali. </p>
+      <p>Munji's Copyright &copy;2025 All rights
+        reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
